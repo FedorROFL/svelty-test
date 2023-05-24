@@ -13,7 +13,7 @@ function add() {
     newItem = '';
   }
 }
-import Icon from '../../../../components/Icon.svelte';
+import Icon from '../../../components/Icon.svelte';
 function remove(index) {
   todoList.splice(index, 1);
   todoList = todoList;
@@ -29,7 +29,21 @@ function complete(index) {
         <input bind:value={newItem} placeholder="Enter to-do" />
         <button class="add-todo" on:click={add}><span>+</span></button>
       </form>
-      
+      <div class="todos">
+        {#each todoList as item, index}
+        <div class="todo" class:completed={item.completed}>
+          <span class="todo__text">{item.task}</span>
+          <div class="todo__buttons">
+            <button class="complete" on:click={() => complete(index)}>
+              <Icon name="check-mark" />
+            </button>
+            <button class="delete" on:click={() => remove(index)}>
+              <Icon name="delete" />
+            </button>
+          </div>
+        </div>
+        {/each}
+      </div>
 </main>
 <style>
     main {
@@ -126,19 +140,5 @@ button.complete:hover {
 
 </style>
 
-<div class="todos">
-    {#each todoList as item, index}
-    <div class="todo" class:completed={item.completed}>
-      <span class="todo__text">{item.task}</span>
-      <div class="todo__buttons">
-        <button class="complete" on:click={() => complete(index)}>
-          <Icon name="check-mark" />
-        </button>
-        <button class="delete" on:click={() => remove(index)}>
-          <Icon name="delete" />
-        </button>
-      </div>
-    </div>
-    {/each}
-  </div>
+
 
