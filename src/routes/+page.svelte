@@ -1,31 +1,32 @@
 <svelte:head>
-    <title>Имя Фамилия</title>
-    </svelte:head>
-    <div class='container'>
-        <div class='info'>
-            <div class='animate-background'>
-                <div class='container info-container'>
-                    <div class='info-text'>
-                        <h1>
-                            <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
-                            <p class='text-2'>Lorem ipsum dolor sit amet.</p>
-                        </h1>
-                    </div>
-                    <h2 class='subtitle'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
-                        ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
-                    </h2>
-                    <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
-                        <a href='/about'>Click Here</a>
-                        <div class='arrow'>→</div>
-                    </div>
+    <title>мой сайт</title>
+</svelte:head>
+
+<div class="container">
+    <div class="info">
+        <div class="animate-background">
+            <div class="container info-container">
+                <div class="info-text">
+                    <h1>
+                        <p class="animate-text-1"></p>
+                        <p class="text-2">Федор Вантеев</p>
+                    </h1>
+                </div>
+                <h2 class="subtitle">
+        
+                </h2>
+                <div style="color:black" class="scroll-button animate-scroll" tabindex="0">
+                    <a href="/about">Начнём...</a>
+                    <div class="arrow">→</div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class='background-div'></div>
-    <style>
+</div>
+
+<div class="background-div" />
+
+<style>
     .info {
         text-align: center;
         position: relative;
@@ -59,13 +60,13 @@
     .info h2 {
         max-width: 65ch;
         font-weight: 200;
-        margin-top: 0.50rem;
+        margin-top: 0.5rem;
     }
     .background-div {
-        background-color: #ecebe8;
+        background-color: #f8d196;
         width: 100%;
         height: 56vh;
-        margin: -205px auto;
+        margin: -295px auto;
     }
     .info .info-text {
         position: relative;
@@ -77,10 +78,6 @@
         cursor: pointer;
     }
     .scroll-button .arrow {
-        margin-left: 0.50rem;
+        margin-left: 0.5rem;
     }
 </style>
-
-
-
-
