@@ -8,15 +8,15 @@
             <div class="container info-container">
                 <div class="info-text">
                     <h1>
-                        <p class="animate-text-1"></p>
-                        <p class="text-2">Федор Вантеев</p>
+                        <p class="animate-text-1">Персональный сайт,</p>
+                        <p class="text-2">Федора Вантеева</p>
                     </h1>
                 </div>
                 <h2 class="subtitle">
         
                 </h2>
                 <div style="color:black" class="scroll-button animate-scroll" tabindex="0">
-                    <a href="/about">Начнём...</a>
+                    <a href="/about">Начнём</a>
                     <div class="arrow">→</div>
                 </div>
             </div>
