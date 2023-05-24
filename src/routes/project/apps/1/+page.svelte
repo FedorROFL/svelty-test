@@ -119,6 +119,10 @@ button.complete:hover {
 .todo.completed button {
   color: silver;
 }
+.todos {
+  width: 100%;
+  max-width: 500px;
+}
 
 </style>
 
